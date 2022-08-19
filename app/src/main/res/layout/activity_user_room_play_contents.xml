@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRoomPlayContents">
+
+    <RelativeLayout
+        android:id="@+id/search_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/searchbarbackground"
+        android:elevation="15dp"
+        android:minHeight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+
+        android:paddingBottom="0dp">
+
+        <ImageView
+            android:id="@+id/headerlogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/applogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/headerlogo"
+            android:text="Third AI"
+            android:textColor="@color/redprimary"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/user_room"
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/user"
+            android:contentDescription="@string/user_room"
+            android:scaleType="fitXY" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/userRoomRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/search_wrapper"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@id/search_wrapper"
+        app:layout_constraintStart_toEndOf="@id/mediaplayerblock"
+
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/mediaplayerblock"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressBackgroundTint="@color/black"
+            android:progressTint="@color/redprimary"
+            android:saveEnabled="false"
+            android:thumb="@drawable/mediaplayerthumb" />
+
+        <TextView
+            android:id="@+id/tv_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seek_bar"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/tv_due"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seek_bar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/savebuttonraw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@id/player">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/savebutton"
+                android:text="Save" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="55dp"
+            android:orientation="horizontal"
+
+            android:paddingBottom="5dp">
+
+            <ImageButton
+                android:id="@+id/backforward"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@id/backtrack"
+                android:background="@drawable/backforwardbutton"
+                android:elevation="4dp"
+                android:padding="2dp"
+                android:paddingEnd="4dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/backforward" />
+
+            <ImageButton
+                android:id="@+id/backtrack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toStartOf="@id/play"
+                android:background="@drawable/previoustrackbutton"
+                android:elevation="2dp"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/backtrack" />
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/mediaplayerbutton"
+                android:elevation="2dp"
+                android:paddingStart="5dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/play" />
+
+            <ImageButton
+                android:id="@+id/nexttrack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/play"
+                android:background="@drawable/nexttrackbutton"
+                android:elevation="2dp"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/previoustrack" />
+
+            <ImageButton
+                android:id="@+id/fastforward"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/nexttrack"
+                android:background="@drawable/fastforwardbutton"
+                android:elevation="4dp"
+                android:padding="2dp"
+                android:paddingEnd="4dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/fastforward" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <Button
+        android:elevation="10dp"
+        android:background="@drawable/microphoneback"
+        android:id="@+id/microphone"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Microphone"
+        android:textSize="24sp" />
+</RelativeLayout>

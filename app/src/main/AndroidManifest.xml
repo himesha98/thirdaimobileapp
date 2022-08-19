@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thirdeye">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ThirdEye"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".PlaySeminars"></activity>
+        <activity android:name=".UserRoomPlayContents" />
+        <activity android:name=".PlayNovels" />
+        <activity android:name=".PlayPodcasts" />
+        <activity android:name=".PlayMusic" />
+        <activity android:name=".PlayContent" />
+        <activity android:name=".SubjectsOlevel" />
+        <activity android:name=".Subjects_primary_grades" />
+        <activity android:name=".SubjectsMidGrades" />
+        <activity android:name=".UserRoom" />
+        <activity
+            android:name=".Library"
+            android:exported="true" />
+        <activity
+            android:name=".Entertainment"
+            android:exported="true" />
+        <activity
+            android:name=".Choose_grade"
+            android:exported="true" />
+        <activity
+            android:name=".Categories"
+            android:exported="true" />
+        <activity
+            android:name=".Startwindow"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+rootProject.name = "ThirdEye"
+include ':app'

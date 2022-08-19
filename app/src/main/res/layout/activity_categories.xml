@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Categories">
+
+    <RelativeLayout
+        android:id="@+id/search_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:elevation="15dp"
+        android:background="@drawable/searchbarbackground"
+        android:minHeight="15dp"
+        android:paddingTop="5dp"
+
+        android:paddingBottom="0dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/headerlogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/applogo"/>
+        <TextView
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/headerlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third AI"
+            android:textSize="30sp"
+            android:textColor="@color/redprimary"
+            />
+
+        <ImageButton
+            android:layout_centerVertical="true"
+
+            android:id="@+id/user_room"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/user"
+            android:contentDescription="@string/user_room"
+            android:scaleType="fitXY" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_wrapper"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/category_background"
+                android:elevation="2dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+
+                    android:id="@+id/edu_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/edu_icon"
+                    app:srcCompat="@drawable/education" />
+
+                <TextView
+                    android:id="@+id/texteduSin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/edu_icon"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/edu_sin"
+                    android:textColor="@color/redprimary"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/textedu"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texteduSin"
+                    android:layout_toEndOf="@id/edu_icon"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/educational_subjects"
+                    android:textColor="@color/greenprimary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/entertainment"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/category_background"
+                android:elevation="2dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+
+                    android:id="@+id/entertaiment_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/music_icon"
+                    app:srcCompat="@drawable/music" />
+
+                <TextView
+                    android:id="@+id/textentertaimentSin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/entertaiment_icon"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/ent_sinhala"
+                    android:textColor="@color/pink_primary"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/textentertaiment"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textentertaimentSin"
+                    android:layout_toEndOf="@id/entertaiment_icon"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/entertainment"
+                    android:textColor="@color/blue_primary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/library"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/category_background"
+                android:elevation="2dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+
+                    android:id="@+id/library_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/lib_icon"
+                    android:elevation="10dp"
+                    app:srcCompat="@drawable/bookshelf" />
+
+                <TextView
+                    android:id="@+id/textlibrarySin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/library_icon"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/library_sin"
+                    android:textColor="@color/gold_primary"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/textlibrary"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textlibrarySin"
+                    android:layout_toEndOf="@id/library_icon"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/library"
+                    android:textColor="@color/brown_primary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/internet_surf"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/category_background"
+                android:elevation="2dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+
+                    android:id="@+id/internet_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/lib_icon"
+                    android:elevation="10dp"
+                    app:srcCompat="@drawable/multimedia" />
+
+                <TextView
+                    android:id="@+id/textinternetSin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/internet_icon"
+                    android:fontFamily="@font/regular"
+                    android:text="අන්තර්ජාලය"
+                    android:textColor="@color/blue_light_primary"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/textinternet"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textinternetSin"
+                    android:layout_toEndOf="@id/internet_icon"
+                    android:fontFamily="@font/regular"
+                    android:text="Surf the internet"
+                    android:textColor="@color/orange_primary"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/todolist"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/category_background"
+                android:elevation="2dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+
+                    android:id="@+id/todolist_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/lib_icon"
+                    android:elevation="10dp"
+                    app:srcCompat="@drawable/todolist" />
+
+                <TextView
+                    android:id="@+id/texttodolistSin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/todolist_icon"
+                    android:fontFamily="@font/regular"
+                    android:text="To do list"
+                    android:textColor="@color/redprimary"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/texttodolist"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texttodolistSin"
+                    android:layout_toEndOf="@id/todolist_icon"
+                    android:fontFamily="@font/regular"
+                    android:text="Add voice commands"
+                    android:textColor="@color/teal_200"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:elevation="10dp"
+        android:background="@drawable/microphoneback"
+        android:id="@+id/microphone"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Microphone"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Choose_grade">
+    <RelativeLayout
+        android:id="@+id/search_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:elevation="15dp"
+        android:background="@drawable/searchbarbackground"
+        android:minHeight="15dp"
+        android:paddingTop="5dp"
+
+        android:paddingBottom="0dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/headerlogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/applogo"/>
+        <TextView
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/headerlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third AI"
+            android:textSize="30sp"
+            android:textColor="@color/redprimary"
+            />
+
+        <ImageButton
+            android:layout_centerVertical="true"
+
+            android:id="@+id/user_room"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/user"
+            android:contentDescription="@string/user_room"
+            android:scaleType="fitXY" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/grade_list"
+        android:layout_below="@+id/search_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+      >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/graderow1"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/grade_1"
+                android:layout_width="110dp"
+                android:layout_height="144dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/grade"
+                android:elevation="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="0dp">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade1_icon"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/number1"
+                    android:contentDescription="@string/edu_icon"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade1_sin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade1_sin"
+                    android:layout_below="@id/grade1_icon"
+                    android:textSize="18sp"
+                    android:textColor="@color/redprimary"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/regular"
+                    />
+
+                <TextView
+                    android:id="@+id/grade1_eng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/grade1_sin"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/singlegradeback"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/grade_1_eng"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/grade_2"
+                android:layout_width="110dp"
+                android:layout_height="144dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/grade"
+                android:layout_toEndOf="@id/grade_1"
+
+                android:elevation="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="0dp">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade2_icon"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/number2"
+                    android:contentDescription="@string/edu_icon"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade2_sin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade2_sin"
+                    android:layout_below="@id/grade2_icon"
+                    android:textSize="18sp"
+                    android:textColor="@color/redprimary"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/regular"
+                    />
+
+                <TextView
+                    android:id="@+id/grade2_eng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/grade2_sin"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/singlegradeback"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/grade_2_eng"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/grade_3"
+                android:layout_width="110dp"
+                android:layout_height="144dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/grade"
+                android:layout_toEndOf="@id/grade_1"
+
+                android:elevation="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="0dp">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade3_icon"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/number3"
+                    android:contentDescription="@string/edu_icon"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade3_sin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade3_sin"
+                    android:layout_below="@id/grade3_icon"
+                    android:textSize="18sp"
+                    android:textColor="@color/redprimary"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/regular"
+                    />
+
+                <TextView
+                    android:id="@+id/grade3_eng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/grade3_sin"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/singlegradeback"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/grade_4_eng"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/graderow1"
+            android:id="@+id/graderow2"
+
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/grade_4"
+                android:layout_width="110dp"
+                android:layout_height="144dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/grade"
+                android:elevation="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="0dp">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade4_icon"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/number4"
+                    android:contentDescription="@string/edu_icon"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade4_sin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade4_sin"
+                    android:layout_below="@id/grade4_icon"
+                    android:textSize="18sp"
+                    android:textColor="@color/redprimary"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/regular"
+                    />
+
+                <TextView
+                    android:id="@+id/grade4_eng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/grade4_sin"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/singlegradeback"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/grade_4_eng"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/grade_5"
+                android:layout_width="110dp"
+                android:layout_height="144dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/grade"
+
+                android:elevation="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="0dp">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade5_icon"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/number5"
+                    android:contentDescription="@string/edu_icon"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade5_sin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade5_sin"
+                    android:layout_below="@id/grade5_icon"
+                    android:textSize="18sp"
+                    android:textColor="@color/redprimary"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/regular"
+                    />
+
+                <TextView
+                    android:id="@+id/grade5_eng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/grade5_sin"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/singlegradeback"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/grade_5_eng"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/grade_6"
+                android:layout_width="110dp"
+                android:layout_height="144dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/grade"
+                android:layout_toEndOf="@id/grade_1"
+
+                android:elevation="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="0dp">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade6_icon"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/number6"
+                    android:contentDescription="@string/edu_icon"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/grade6_sin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade6_sin"
+                    android:layout_below="@id/grade6_icon"
+                    android:textSize="18sp"
+                    android:textColor="@color/redprimary"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/regular"
+                    />
+
+                <TextView
+                    android:id="@+id/grade6_eng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/grade6_sin"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/singlegradeback"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/grade6_eng"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/graderow3"
+        android:layout_below="@id/graderow2"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/grade_7"
+            android:layout_width="110dp"
+            android:layout_height="144dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/grade"
+            android:elevation="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="0dp">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grade7_icon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@drawable/number7"
+                android:contentDescription="@string/edu_icon"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grade7_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grade7_sin"
+                android:layout_below="@id/grade7_icon"
+                android:textSize="18sp"
+                android:textColor="@color/redprimary"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/regular"
+                />
+
+            <TextView
+                android:id="@+id/grade7_eng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grade7_sin"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/singlegradeback"
+                android:fontFamily="@font/regular"
+                android:text="@string/grade7_eng"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grade_8"
+            android:layout_width="110dp"
+            android:layout_height="144dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/grade"
+            android:layout_toEndOf="@id/grade_1"
+
+            android:elevation="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="0dp">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grade8_icon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@drawable/number8"
+                android:contentDescription="@string/edu_icon"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grade8_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grade8_sin"
+                android:layout_below="@id/grade8_icon"
+                android:textSize="18sp"
+                android:textColor="@color/redprimary"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/regular"
+                />
+
+            <TextView
+                android:id="@+id/grade8_eng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grade8_sin"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/singlegradeback"
+                android:fontFamily="@font/regular"
+                android:text="@string/grade8_eng"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grade_9"
+            android:layout_width="110dp"
+            android:layout_height="144dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/grade"
+            android:layout_toEndOf="@id/grade_1"
+
+            android:elevation="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="0dp">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grade9_icon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@drawable/number9"
+                android:contentDescription="@string/edu_icon"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grade9_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grade9_sin"
+                android:layout_below="@id/grade9_icon"
+                android:textSize="18sp"
+                android:textColor="@color/redprimary"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/regular"
+                />
+
+            <TextView
+                android:id="@+id/grade9_eng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grade9_sin"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/singlegradeback"
+                android:fontFamily="@font/regular"
+                android:text="@string/grade9_eng"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/graderow4"
+        android:layout_below="@id/graderow3">
+
+
+        <RelativeLayout
+            android:id="@+id/grade_10"
+            android:layout_width="110dp"
+            android:layout_height="144dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/grade"
+            android:layout_toEndOf="@id/grade_1"
+
+            android:elevation="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="0dp">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grade10_icon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@drawable/number10"
+                android:contentDescription="@string/edu_icon"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grade10_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grade10_sin"
+                android:layout_below="@id/grade10_icon"
+                android:textSize="18sp"
+                android:textColor="@color/redprimary"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/regular"
+                />
+
+            <TextView
+                android:id="@+id/grade10_eng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grade10_sin"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/singlegradeback"
+                android:fontFamily="@font/regular"
+                android:text="@string/grade10_eng"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/grade_11"
+            android:layout_width="110dp"
+            android:layout_height="144dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/grade"
+            android:layout_toEndOf="@id/grade_1"
+
+            android:elevation="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="0dp">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grade11_icon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@drawable/number11"
+                android:contentDescription="@string/edu_icon"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grade11_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grade11_sin"
+                android:layout_below="@id/grade11_icon"
+                android:textSize="18sp"
+                android:textColor="@color/redprimary"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/regular"
+                />
+
+            <TextView
+                android:id="@+id/grade11_eng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grade11_sin"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/singlegradeback"
+                android:fontFamily="@font/regular"
+                android:text="@string/grade11_eng"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+    </ScrollView>
+    <Button
+        android:elevation="10dp"
+        android:background="@drawable/microphoneback"
+        android:id="@+id/microphone"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Microphone"
+        android:textSize="24sp" />
+</RelativeLayout>

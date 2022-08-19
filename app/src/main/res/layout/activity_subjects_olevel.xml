@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Subjects_primary_grades">
+
+    <RelativeLayout
+        android:id="@+id/search_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:elevation="15dp"
+        android:background="@drawable/searchbarbackground"
+        android:minHeight="15dp"
+        android:paddingTop="5dp"
+
+        android:paddingBottom="0dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/headerlogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/applogo"/>
+        <TextView
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/headerlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third AI"
+            android:textSize="30sp"
+            android:textColor="@color/redprimary"
+            />
+
+        <ImageButton
+            android:layout_centerVertical="true"
+
+            android:id="@+id/user_room"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/user"
+            android:contentDescription="@string/user_room"
+            android:scaleType="fitXY" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/subject_list"
+        android:layout_below="@+id/search_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/subjectrow1"
+                android:layout_centerHorizontal="true"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/buddism_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/buddism_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/buddism"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/buddism_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="බුද්ධ ධර්මය"
+                        android:layout_below="@id/buddism_icon"
+                        android:textSize="18sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/buddism_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/buddism_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="Buddism"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sinhala_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:layout_toEndOf="@id/buddism"
+
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/sinhala_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/sinhala"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/sinhala_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="සිංහල"
+                        android:layout_below="@id/sinhala_icon"
+                        android:textSize="18sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/sinhala_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sinhala_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="Sinhala"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/english_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:layout_toEndOf="@id/sinhala"
+
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/english_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/english"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/english_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ඉංග්‍රීසි"
+                        android:layout_below="@id/english_icon"
+                        android:textSize="18sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/english_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/english_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="English"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/subjectrow2"
+                android:layout_below="@id/subjectrow1"
+                android:layout_centerHorizontal="true"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/maths_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/maths_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/mathematics"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/maths_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ගණිතය"
+                        android:layout_below="@id/maths_icon"
+                        android:textSize="18sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/maths_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/maths_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="Maths"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/science_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:layout_toEndOf="@id/maths_ol"
+
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/science_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/science"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/science_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="විද්‍යාව"
+                        android:layout_below="@id/science_icon"
+                        android:textSize="18sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/science_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/science_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="Science"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/history_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:layout_toEndOf="@id/science_ol"
+
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/history_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/history"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/history_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ඉතිහාසය"
+                        android:layout_below="@id/history_icon"
+                        android:textSize="18sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/history_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/history_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="History"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/subjectrow3"
+                android:layout_below="@id/subjectrow2"
+                android:layout_centerHorizontal="true"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/ict_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/ict_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/ict"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/ict_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="තොරතුරු තාක්ෂණය"
+                        android:layout_below="@id/ict_icon"
+                        android:textSize="10sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/ict_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ict_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="ICT"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/civics_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:layout_toEndOf="@id/ict_ol"
+
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/civics_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/civics"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/civics_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="පුරවැසි අධ්‍යනය"
+                        android:layout_below="@id/civics_icon"
+                        android:textSize="10sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/civics_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/civics_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="Social Studies"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/geography_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:layout_toEndOf="@id/civics_ol"
+
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/geography_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/geography"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/geography_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="භූගෝල විද්‍යාව"
+                        android:layout_below="@id/geography_icon"
+                        android:textSize="10sp"
+
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/geography_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/geography_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="Geography"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/subjectrow4"
+                android:layout_below="@id/subjectrow3"
+                android:layout_centerHorizontal="true"
+                >
+                <RelativeLayout
+                    android:id="@+id/tamil_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:layout_toEndOf="@id/tamil_ol"
+
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/tamil_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/tamil"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/tamil_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="දෙමළ බස"
+                        android:layout_below="@id/tamil_icon"
+                        android:textSize="18sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/tamil_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tamil_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="Tamil"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/commerce_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:layout_toEndOf="@id/sinhala"
+
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/commerce_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/commerce"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/commerce_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ව්‍යාපාර අධ්‍යනය"
+                       android:paddingBottom="10dp"
+                        android:layout_below="@id/commerce_icon"
+                        android:textSize="10sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/commerce_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/commerce_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="Commerce"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/health_ol"
+                    android:layout_width="110dp"
+                    android:layout_height="144dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/grade"
+                    android:layout_toEndOf="@id/commerce_ol"
+
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/health_icon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:srcCompat="@drawable/health"
+                        android:contentDescription="@string/edu_icon"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/health_sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="සෞඛ්‍යය"
+                        android:paddingBottom="10dp"
+                        android:layout_below="@id/health_icon"
+                        android:textSize="10sp"
+                        android:textColor="@color/redprimary"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/regular"
+                        />
+
+                    <TextView
+                        android:id="@+id/health_eng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/health_sin"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@drawable/singlegradeback"
+                        android:fontFamily="@font/regular"
+                        android:text="Health"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:elevation="10dp"
+        android:background="@drawable/microphoneback"
+        android:id="@+id/microphone"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Microphone"
+        android:textSize="24sp" />
+</RelativeLayout>

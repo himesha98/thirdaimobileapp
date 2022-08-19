@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Third AI</string>
+    <string name="font_logo">wild latin</string>
+    <string name="library">Library</string>
+    <string name="ent_sinhala">විනෝදාස්වාදය</string>
+    <string name="serach_icon">search</string>
+    <string name="library_sin">පුස්තකාලය</string>
+    <string name="user_room">user_room</string>
+    <string name="unkmown">unknwon</string>
+    <string name="music_icon">music_icon</string>
+    <string name="edu_icon">edu_icon</string>
+    <string name="edu_sin">අධ්‍යාපනික විෂයන්</string>
+    <string name="educational_subjects">Educational subjects</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="search">Search</string>
+    <string name="lib_icon">lib_icon</string>
+    <string name="grade1_sin">1 ශ්‍රේණිය</string>
+    <string name="grade3_sin">3 ශ්‍රේණිය</string>
+    <string name="grade_1_eng">Grade 1</string>
+    <string name="grade_2_eng">Grade 2</string>
+    <string name="grade2_sin">2 ශ්‍රේණිය</string>
+    <string name="grade_4_eng">Grade 4</string>
+    <string name="grade4_sin">4 ශ්‍රේණිය</string>
+    <string name="grade_5_eng">Grade 5</string>
+    <string name="grade5_sin">5 ශ්‍රේණිය</string>
+    <string name="grade_3_eng">Grade 3</string>
+    <string name="grade6_sin">6 ශ්‍රේණිය</string>
+    <string name="grade6_eng">Grade 6</string>
+
+    <string name="grade7_sin">7 ශ්‍රේණිය</string>
+    <string name="grade8_sin">8 ශ්‍රේණිය</string>
+    <string name="grade9_sin">9 ශ්‍රේණිය</string>
+    <string name="grade10_sin">10 ශ්‍රේණිය</string>
+    <string name="grade11_sin">11 ශ්‍රේණිය</string>
+
+    <string name="grade7_eng">Grade 7</string>
+    <string name="grade8_eng">Grade 8</string>
+    <string name="grade9_eng">Grade 9</string>
+    <string name="grade10_eng">Grade 10</string>
+    <string name="grade11_eng">Grade 11</string>
+
+
+</resources>
